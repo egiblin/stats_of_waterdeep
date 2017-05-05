@@ -23,4 +23,6 @@ Things you may want to cover:
 
 * ...
 
-[![Coverage Status](https://coveralls.io/repos/github/egiblin/stats_of_waterdeep/badge.svg)](https://coveralls.io/github/egiblin/stats_of_waterdeep)
+![Build Status](https://codeship.com/projects/0bab7360-1360-0135-b400-665a59cd58c3/status?branch=master)
+![Code Climate](https://codeclimate.com/github/egiblin/stats_of_waterdeep.png)
+![Coverage Status](https://coveralls.io/repos/egiblin/stats_of_waterdeep/badge.png)
