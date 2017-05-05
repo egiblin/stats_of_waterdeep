@@ -33,7 +33,7 @@ class PlayersController < ApplicationController
 
   def params_strong
     params.require(:player).permit(
-    :name,
+    :username,
     :wins,
     :games
     )

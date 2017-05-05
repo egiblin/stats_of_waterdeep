@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20170504213825) do
     t.bigint  "player_number",                 null: false
     t.boolean "skullport",     default: false
     t.boolean "undermountain", default: false
-    t.string  "winner",                        null: false
   end
 
   create_table "lords", force: :cascade do |t|
@@ -39,11 +38,13 @@ ActiveRecord::Schema.define(version: 20170504213825) do
   end
 
   create_table "players", force: :cascade do |t|
-    t.string   "name",                   null: false
-    t.integer  "games",      default: 0, null: false
-    t.integer  "wins",       default: 0, null: false
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "name",                     null: false
+    t.integer  "games_played", default: 0, null: false
+    t.integer  "wins",         default: 0, null: false
+    t.integer  "game_id"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.index ["game_id"], name: "index_players_on_game_id", using: :btree
   end
 
 end
