@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+/* Removing Bullets from Main Menu */
+.dropdown, .menu{
+  list-style-type: none;
+}
+/* Formatting Top Bar*/
+
+.top-bar li{
+  margin: 0;
+  padding: 0.5em;
+  padding-top: 0;
+  display: inline-block;
+  float: left;
+}
+.top-bar-right li{
+  padding-left: 4em;
+}
+.top-bar a{
+  text-decoration: none;
+}
+.devise-top-bar span{
+  padding-left: 5em;
+  padding-right: 5em;
+}
