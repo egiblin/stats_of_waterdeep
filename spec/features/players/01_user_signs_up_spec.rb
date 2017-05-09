@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature 'sign up' do
-player = FactoryGirl.create(:player)
+  player = FactoryGirl.build(:player)
   scenario 'with valid information' do
     visit root_path
     click_link 'Sign up'
