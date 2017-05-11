@@ -61,12 +61,24 @@ whose sharp eyes never miss a detail."],
   ["Larissa Neathal", base, buildings,
 "Known for her extravagant court parties and her ability to blend in anywhere,
 Larissa uses a courtesan facade to hide her skill at information gathering."],
-  ["Danilo Thann", undermountain, small_quests, ],
-  [, undermountain, large_quests],
-  [, undermountain, undermountain_quests],
-  ["The Xanathar", skullport, corruption, ],
-  [, skullport, certain_quests, ],
-  [, skullport, skullport_quests]
+  ["Danilo Thann", undermountain, small_quests,
+"Most see Danilo as just a dandy with a charming smile, but behind the demeanor
+is a clever and capable bard."],
+  ["Trobriand", undermountain, large_quests,
+"An apprentince of Halastar, Trobriand creates animated metal monstrosities
+deep in Undermountain."],
+  ["Halaster Blackcloak", undermountain, undermountain_quests
+"The Mad Mage of Undermountain transformed the Underhalls into a playground
+for himself and a death trap for others."],
+  ["The Xanathar", skullport, corruption,
+"Also known as the Eye, the Xanathar controls most of the criminal activities
+in Waterdeep and Skullport."],
+  ["Irusyl Eraneth", skullport, certain_quests,
+"This mysterious Skullport archmage is actually a disguise for Laeral Silverhand,
+the Lady Mage of Waterdeep and Chosen of Mystra." ],
+  ["Sangalor", skullport, skullport_quests,
+  "Sangalor, a priest of Oghma, believes he has risen above the base nature of his
+  illithid heritage."]
 ]
 
 lords.each do |lord|
