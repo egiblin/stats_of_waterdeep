@@ -14,11 +14,33 @@
  *= require_self
  */
 
+/* Background Image */
+body {
+  background-image: url("SoS.jpg");
+}
+
 /* Removing Bullets from Main Menu */
 .dropdown, .menu{
   list-style-type: none;
 }
 /* Formatting Top Bar*/
+
+.top-bar {
+  opacity: 0.95;
+  color: white;
+}
+
+a:link {
+  color: #D0E0EB;
+}
+
+a:hover {
+  color: #88ABC2;
+}
+
+a:active {
+  color: #67917A;
+}
 
 .top-bar li{
   margin: 0;
