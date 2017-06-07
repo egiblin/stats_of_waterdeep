@@ -17,6 +17,7 @@
 /* Background Image */
 body {
   background-image: url("SoS.jpg");
+  height: ;
 }
 
 /* Removing Bullets from Main Menu */
@@ -26,36 +27,34 @@ body {
 /* Formatting Top Bar*/
 
 .top-bar {
-  opacity: 0.95;
-  color: white;
+  opacity: 1;
+  margin-top: 0;
+  padding-top: 0;
+  height: 1.5em;
 }
 
-a:link {
-  color: #D0E0EB;
-}
-
-a:hover {
+a {
   color: #88ABC2;
 }
 
-a:active {
-  color: #67917A;
+a:hover {
+  color: #F4DD51;
 }
 
-.top-bar li{
+.top-bar-left li{
   margin: 0;
-  padding: 0.5em;
+  padding: 2em;
   padding-top: 0;
   display: inline-block;
   float: left;
 }
 .top-bar-right li{
-  padding-left: 4em;
+  float: right;
+}
+.top-bar-right span{
+  padding: 0.2em;
+  float: right;
 }
 .top-bar a{
   text-decoration: none;
-}
-.devise-top-bar span{
-  padding-left: 5em;
-  padding-right: 5em;
 }
