@@ -1,4 +1,8 @@
 <h1>Lords</h1>
-<% @lords.each do |lord| %>
-  <a href="<%= lord.name %>"><%= lord.name %></a>
-<% end %>
+<div class="display-column">
+  <% @lords.each do |lord| %>
+  <div class="display-box">
+    <a href="<%= lord.name %>"><%= lord.name %></a>
+  </div>
+  <% end %>
+</div>
