@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20170506175711) do
 
   create_table "factions", force: :cascade do |t|
     t.string   "name",                    null: false
-    t.string   "image_url",               null: false
     t.string   "color",                   null: false
     t.string   "description",             null: false
     t.integer  "games",       default: 0, null: false
