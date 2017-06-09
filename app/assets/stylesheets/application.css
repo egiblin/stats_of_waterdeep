@@ -34,7 +34,7 @@ body {
 }
 
 a {
-  color: #88ABC2;
+  color: #373737;
 }
 
 a:hover {
@@ -57,4 +57,13 @@ a:hover {
 }
 .top-bar a{
   text-decoration: none;
+}
+
+
+/* Styling Main Boxes On Page */
+.display-column div{
+  display: inline-block;
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }

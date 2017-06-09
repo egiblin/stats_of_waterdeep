@@ -2,7 +2,7 @@
 <div class="display-column">
   <% @lords.each do |lord| %>
   <div class="display-box">
-    <a href="<%= lord.name %>"><%= lord.name %></a>
+    <a href="lords/<%= lord.id %>"><%= lord.name %></a>
   </div>
   <% end %>
 </div>
