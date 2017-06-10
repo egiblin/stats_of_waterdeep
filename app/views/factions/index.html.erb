@@ -1,4 +1,8 @@
 <h1>Factions</h1>
-<% @factions.each do |faction| %>
-  <a href="<%= faction.name %>"><%= faction.name %></a>
-<% end %>
+<div class="display-column">
+  <% @factions.each do |faction| %>
+  <div class="display-box">
+    <a href="factions/<%= faction.id %>"><%= faction.name %></a>
+  </div>
+  <% end %>
+</div>
