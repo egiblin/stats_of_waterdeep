@@ -1,1 +1,7 @@
 <h1><%= @faction.name %></h1>
+<h3>Wins: <%= @faction.wins %></h3>
+<% if @faction.games != 0 %>
+  <h3>Win Percentage: <%= (@faction.wins/@faction.games)%></h3>
+<% else %>
+  <h3>This Faction Has Not Played Any Games Yet</h3>
+<% end %>
