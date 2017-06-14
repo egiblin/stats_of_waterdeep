@@ -1,7 +1,14 @@
 <h1><%= @lord.name %></h1>
+<p><%= @lord.description %></p>
 <h3>Wins: <%= @lord.wins %></h3>
 <% if @lord.games != 0 %>
   <h3>Win Percentage: <%= (@lord.wins/@lord.games) %></h3>
 <% else %>
   <h3>No Games Played Yet as this Lord</h3>
+<% end %>
+
+<h3>Description: </h3>
+<h2>Favored Quest Types: </h2>
+<% @lord.bonus_description.each do |quest| %>
+  <h2><%= quest %></h2>
 <% end %>
