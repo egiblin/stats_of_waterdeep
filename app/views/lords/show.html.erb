@@ -16,6 +16,7 @@
 <h2>Win Percentage: </h2>
 <% unless @lord.games == 0 %>
   <h2><%= @lord.wins/(@lord.games) * 100 %>%</h2>
+<% end %>
 
 <h2>Best Player With <%= @lord.name %></h2>
 <h2>Worst Player With <%= @lord.name %></h2>
