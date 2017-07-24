@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170506175711) do
+ActiveRecord::Schema.define(version: 20170724194937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20170506175711) do
     t.bigint  "player_number",                 null: false
     t.boolean "skullport",     default: false
     t.boolean "undermountain", default: false
+    t.text    "players",       default: [],                 array: true
   end
 
   create_table "lords", force: :cascade do |t|
