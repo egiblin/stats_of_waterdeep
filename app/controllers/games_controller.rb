@@ -9,6 +9,7 @@ class GamesController < ApplicationController
 
   def new
     @game = Game.new
+    @players = Player.all
   end
 
   def create

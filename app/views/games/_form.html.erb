@@ -1,0 +1,24 @@
+<%= form_for @game do |f| %>
+<div class="game_form">
+  <div>
+    <%= f.label(:player_number, "Number of Players") %>
+    <%= f.select :player_number, [2, 3, 4, 5, 6] %>
+  </div>
+  <% 6.times do %>
+    <div>
+      <%= s.collection_select :player_id, @players, :id, :username %>
+    </div>
+  <% end %>
+
+  <div>
+    <%= f.label(:winner, "Winner:") %>
+    <%= f.collection_select  %>
+  </div>
+
+  <div>
+    <%= f.submit("Submit Game") %>
+  </div>
+  <%= link_to "Back", :back %>
+</div>
+
+<% end %>
