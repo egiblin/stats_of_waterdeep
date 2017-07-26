@@ -4,15 +4,14 @@
     <%= f.label(:player_number, "Number of Players") %>
     <%= f.select :player_number, [2, 3, 4, 5, 6] %>
   </div>
-  <% 6.times do %>
-    <div>
-      <%= s.collection_select :player_id, @players, :id, :username %>
-    </div>
-  <% end %>
+
+  <div>
+    <%= f.collection_select :players, @players, :id, :username, {multiple: true, size: @game.player_number} %>
+  </div>
 
   <div>
     <%= f.label(:winner, "Winner:") %>
-    <%= f.collection_select  %>
+    <%= f.collection_select :winner, @game.players, :id, :username %>
   </div>
 
   <div>
