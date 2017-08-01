@@ -14,10 +14,6 @@
     <%= f.collection_select :winner, @game.players, :id, :username %>
   </div>
 
-  <div >
-    <%= f.label(:scores, "Scoreboard") %>
-  </div>
-
   <div>
     <%= f.submit("Submit Game") %>
   </div>
