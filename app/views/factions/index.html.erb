@@ -8,6 +8,11 @@
 </div>
 
 <h1>Current Leader in Factions: </h1>
+<%= @factions.first %>
 <h1>Current Worst Faction: </h1>
-<h1>Most Played Faction: </h1>  
+<%= @factions[-1] %>
+<h1>Most Played Faction: </h1>
+<% @played = @factions.sort_by(:games_played) %>
+<%= @played.first %>
 <h1>Least Played Faction: </h1>
+<%= @played[-1] %>

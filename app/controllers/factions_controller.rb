@@ -5,5 +5,6 @@ class FactionsController < ApplicationController
 
   def show
     @faction = Faction.find(params[:id])
+    @players = Player.all
   end
 end
